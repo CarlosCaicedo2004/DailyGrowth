@@ -1,0 +1,26 @@
+.week-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.week-header h2 {
+  font-size: 1.25rem;
+}
+
+.week-nav {
+  display: flex;
+  gap: 8px;
+}
+tbody tr {
+  animation: fadeUp 0.4s ease both;
+}
+
+tbody tr:nth-child(odd) {
+  animation-delay: 0.05s;
+}
+
+tbody tr:nth-child(even) {
+  animation-delay: 0.1s;
+}

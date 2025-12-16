@@ -1,0 +1,15 @@
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --primary: #4f46e5;
+  --primary-soft: #eef2ff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e5e7eb;
+
+  --success: #22c55e;
+  --warning: #facc15;
+  --danger: #ef4444;
+
+  --radius: 16px;
+}

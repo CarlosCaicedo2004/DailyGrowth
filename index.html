@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Growth</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- ================= SEMANA ================= -->
+    <section class="card">
+      <div class="week-header">
+        <div class="week-nav">
+          <button id="prevWeek">←</button>
+          <button id="nextWeek">→</button>
+        </div>
+        <h2 id="weekLabel"></h2>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Hábito</th>
+            <th>L</th>
+            <th>M</th>
+            <th>X</th>
+            <th>J</th>
+            <th>V</th>
+            <th>S</th>
+            <th>D</th>
+          </tr>
+        </thead>
+        <tbody id="habitTable"></tbody>
+      </table>
+    </section>
+
+    <!-- ================= PROGRESO ================= -->
+    <section class="card progress-container">
+      <div id="progressCircle">0%</div>
+      <div class="progress-text">
+        Tu progreso semanal se calcula automáticamente según los hábitos completados.
+      </div>
+    </section>
+
+    <!-- ================= CALENDARIO ================= -->
+    <section class="calendar-card">
+      <div class="calendar-header">
+        <button id="prevMonth">←</button>
+        <h3 id="monthLabel"></h3>
+        <button id="nextMonth">→</button>
+      </div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </section>
+
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

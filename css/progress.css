@@ -1,0 +1,25 @@
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#progressCircle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: conic-gradient(var(--primary) 0deg, var(--border) 0deg);
+  transition: background 0.4s ease;
+}
+
+.progress-text {
+  color: var(--muted);
+  max-width: 300px;
+}
+#progressCircle {
+  animation: scaleIn 0.4s ease;
+}
